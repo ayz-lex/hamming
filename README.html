@@ -10,46 +10,18 @@
 
 </head>
 <body class="markdown-body">
-<h1 id="overview-1" data-line="0" class="code-line">Overview</h1>
-<h2 id="introduction-1" data-line="2" class="code-line">Introduction</h2>
+<h1 id="overview-3" data-line="0" class="code-line">Overview</h1>
+<h2 id="introduction-3" data-line="2" class="code-line">Introduction</h2>
 <p data-line="4" class="code-line">This project consists of two parts:</p>
 <ol>
 <li data-line="6" class="code-line">A mathematical exploration of the history and math behind the Hamming Code (7, 4).</li>
 <li data-line="7" class="code-line">A program that simulates the process of encoding, correcting, and decoding as described by the Hamming Code.</li>
 </ol>
 <p data-line="9" class="code-line">To understand what the Hamming Code is, skip to the background section first to get an understanding of how the process is meant to work. Then, you can run the sample program to see it in action!</p>
-<h2 id="setup-1" data-line="11" class="code-line">Setup</h2>
-<p data-line="13" class="code-line">First, clone the repository to a directory you would like. Once navigated to the directory that you want to run the program run the following command:</p>
-<p data-line="15" class="code-line"><code> git clone https://github.com/ayz-lex/hamming.git</code></p>
-<p data-line="17" class="code-line">Navigate to inside the project folder by the command:</p>
-<p data-line="19" class="code-line"><code>cd hamming</code></p>
-<p data-line="22" class="code-line">Make sure you have Python installed on your computer. Directions to install Python can be found on this page: <a href="https://www.python.org/downloads/" data-href="https://www.python.org/downloads/">https://www.python.org/downloads/</a>.</p>
-<p data-line="24" class="code-line">There are two options. The program has a built in virtual environment that contains the necessary numpy packages required for the program inside of it. To run this virtual environment, you will need to have Python 3.8+, as well as pipenv installed.</p>
-<p data-line="26" class="code-line">Directions to install Python can be found above.</p>
-<p data-line="28" class="code-line">Directions to install pipenv can be found here: <a href="https://pypi.org/project/pipenv/" data-href="https://pypi.org/project/pipenv/">https://pypi.org/project/pipenv/</a>. To install pipenv, you might need to install pip. That can be found here: <a href="https://pip.pypa.io/en/stable/installing/" data-href="https://pip.pypa.io/en/stable/installing/">https://pip.pypa.io/en/stable/installing/</a>.</p>
-<p data-line="30" class="code-line">Now that everything is installed, you can create the virtual environment by the command:</p>
-<p data-line="32" class="code-line"><code>pipenv install</code></p>
-<p data-line="34" class="code-line">To be able to run commands within the virtual environment, run:</p>
-<p data-line="36" class="code-line"><code>pipenv shell</code></p>
-<p data-line="38" class="code-line">That completes the setup for this option.</p>
-<p data-line="40" class="code-line">The other option is to just install numpy, and not deal with the pipenv stuff. Because the program is fairly lightweight and only requires one library, you can simply install numpy, and the virtual environment is no longer needed.</p>
-<p data-line="42" class="code-line">Installing numpy requires pip. The guide to install pip is here: <a href="https://pip.pypa.io/en/stable/installing/" data-href="https://pip.pypa.io/en/stable/installing/">https://pip.pypa.io/en/stable/installing/</a>.</p>
-<p data-line="44" class="code-line">Once you have pip, installation is farily easy. the guide install numpy is here: <a href="https://numpy.org/install/" data-href="https://numpy.org/install/">https://numpy.org/install/</a>.</p>
-<h2 id="encoding-1" data-line="46" class="code-line">Encoding</h2>
-<p data-line="48" class="code-line">The <a href="http://sender.py" data-href="http://sender.py">sender.py</a> file is responsible for encoding a given bit string.</p>
-<p data-line="50" class="code-line">Once setup is complete, you can run the program. To do this run the following command:</p>
-<p data-line="52" class="code-line"><code>python sender.py</code></p>
-<p data-line="54" class="code-line">if that doesn't work run this instead:</p>
-<p data-line="56" class="code-line"><code>python3 sender.py</code></p>
-<p data-line="58" class="code-line">if that doesn't work either, than you should if python is properly installed. If that doesn't work, make sure you set everything up properly (described in the setup portion of this README). If that doesn't work, you are on your own.</p>
-<p data-line="60" class="code-line">The rest of the program is self-explanatory, as the following print statements guide you through the process.</p>
-<h2 id="correction--decoding-1" data-line="62" class="code-line">Correction + Decoding</h2>
-<p data-line="64" class="code-line">The <a href="http://receiver.py" data-href="http://receiver.py">receiver.py</a> file is responsible for encoding a given bit string.</p>
-<p data-line="66" class="code-line">Once setup is complete, you can run the program. To do this run the following command:</p>
-<p data-line="68" class="code-line"><code>python receiver.py</code></p>
-<p data-line="70" class="code-line">if that doesn't work run this instead:</p>
-<p data-line="72" class="code-line"><code>python3 receiver.py</code></p>
-<p data-line="74" class="code-line">if that doesn't work either, than you should if python is properly installed. If that doesn't work, make sure you set everything up properly (described in the setup portion of this README). If that doesn't work, you are on your own.</p>
-<p data-line="76" class="code-line">The rest of the program is self-explanatory, as the following print statements guide you through the process.</p>
+<h2 id="setup-3" data-line="11" class="code-line">Setup</h2>
+<h2 id="encoding-3" data-line="15" class="code-line">Encoding</h2>
+<p data-line="17" class="code-line">The <a href="http://sender.py" data-href="http://sender.py">sender.py</a> file is responsible for encoding a given bit string.</p>
+<h2 id="correction--decoding-3" data-line="21" class="code-line">Correction + Decoding</h2>
+<p data-line="23" class="code-line">The <a href="http://receiver.py" data-href="http://receiver.py">receiver.py</a> file is responsible for encoding a given bit string.</p>
 
 </body></html>

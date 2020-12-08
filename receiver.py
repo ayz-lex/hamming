@@ -37,13 +37,37 @@ def error_fix(original, tup: tuple):
     return original + errorMap[tup]
 
 print("Enter a bit string that has a length equal to a multiple of 7:")
-input = input()
+inp = input()
+
+while True:
+    if len(inp) % 7 == 0:
+
+        if not inp:
+            break
+
+        i = 0
+        while i < len(inp):
+            char = inp[i]
+            if char != "0" and char != "1":
+                print('')
+                break
+            i += 1
+        
+        if len(inp) == i:
+            break
+        else:
+            print('The input is not a bit string. The only characters should be 0 or 1. Please reenter: ')
+            inp = input()
+
+    else:
+        print('The given input doesn\'t have a length that is a multiple of 4, please reenter: ')
+        inp = input()
 
 final = ""
 
 start = 0
-while start < len(input):
-    cur = input[start: start + 7]
+while start < len(inp):
+    cur = inp[start: start + 7]
 
     final += error_detect_correct(cur)
 
